@@ -1,0 +1,26 @@
+# /etc/conf.d/polarisnetworkd: config file for /etc/init.d/polarisnetworkd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/polarisnetwork/polarisnetwork.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/polarisnetworkd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/polarisnetworkd.pid"
+
+# Where to write polarisnetworkd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/polarisnetworkd"
+
+# User and group to own polarisnetworkd process
+#BITCOIND_USER="polarisnetwork"
+#BITCOIND_GROUP="polarisnetwork"
+
+# Path to polarisnetworkd executable
+#BITCOIND_BIN="/usr/bin/polarisnetworkd"
+
+# Nice value to run polarisnetworkd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

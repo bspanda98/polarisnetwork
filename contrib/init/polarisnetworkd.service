@@ -1,0 +1,26 @@
+[Unit]
+Description=Polarisnetwork's distributed currency daemon
+After=network.target
+
+[Service]
+User=polarisnetwork
+Group=polarisnetwork
+
+Type=forking
+PIDFile=/var/lib/polarisnetworkd/polarisnetworkd.pid
+
+ExecStart=/usr/bin/polarisnetworkd -daemon -pid=/var/lib/polarisnetworkd/polarisnetworkd.pid \
+          -conf=/etc/polarisnetwork/polarisnetwork.conf -datadir=/var/lib/polarisnetworkd
+
+ExecStop=-/usr/bin/polarisnetwork-cli -conf=/etc/polarisnetwork/polarisnetwork.conf \
+         -datadir=/var/lib/polarisnetworkd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
