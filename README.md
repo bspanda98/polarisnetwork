@@ -8,8 +8,8 @@ Polarisnetwork Core is a decentralized, peer-to-peer cryptocurrency with a prima
 
 #
 
-#### Block times: - *1 minute* 
-#### Maximum supply: - *15,000,000 (15 million) POL*
+#### Block times: - *1 minute (60sec)* 
+#### Maximum supply: - *21,000,000 (21 million) POL*
 #### Consensus mechanism: - *Proof-of-Stake (80% masternodes, 20% stakers)*
 #### Algorithm: - *Quark-hash* 
 #### Masternode collateral - *5,000 POL*  
